@@ -4,7 +4,8 @@ This repository contains CUDA C kernels for Fast Causal Attention (FCA) from the
 
 # Quickstart
 Requirements:
-- PyTorch with CUDA
+- torch2.7.0+
+- cu126+
 - NVidia GPU (e.g. RTX4090)
 
 The file bench_qk.py contains CUDA code kernel_qk and benchmarking function evaluator_qk. Running the code (preferably on RTX4090) verifies that:
