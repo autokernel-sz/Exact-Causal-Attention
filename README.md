@@ -1,6 +1,6 @@
 
 # Fast-Causal-Attention
-This repository contains CUDA C kernels for Fast Causal Attention (FCA) from the paper "Exact Attention Using 10% Fewer Operations" by autokernel.ai, in collaboration with Shenzhen Research Institute of Big Data (SRIBD), Moonshot.ai. This codebase verifies speed, accuracy, and correctness of the proposed algorithms.
+This repository contains CUDA C kernels for Fast Causal Attention (FCA) from the paper "Exact Attention Using 10% Fewer Operations" by autokernel.ai, in collaboration with Shenzhen Research Institute of Big Data (SRIBD). This codebase verifies speed, accuracy, and correctness of the proposed algorithms.
 
 # Quickstart
 Requirements:
