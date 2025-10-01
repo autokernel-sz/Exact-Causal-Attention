@@ -1,7 +1,7 @@
 import torch.cuda
 from torch.utils.cpp_extension import load_inline
 
-torch.cuda.set_device(4)
+torch.cuda.set_device(0)
 
 def evaluator_qk(code):
     """
