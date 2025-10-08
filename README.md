@@ -10,14 +10,14 @@ Requirements:
 
 The file bench_qk.py contains CUDA code kernel_qk and benchmarking function evaluator_qk. Running the code verifies that:
 1. the output of the algorithm is the same as Causal Attention scores Mask(QK^T)
-2. the runtime is 20% faster than compiled torch.matmul(Q, K.t()).tril_() for shapes 8192 x 8192
+2. the runtime against compiled torch.matmul(Q, K.t()).tril_() for shapes 8192 x 8192 as reported
 ```bash
     python3 bench_qk.py
 ```
 
 The file bench_pv.py contains CUDA code kernel_pv and benchmarking function evaluator_pv. Running the code verifies that
 1. the output of the algorithm is the same as multiplication of lower-triangular matrix P by matrix V
-2. the runtime $\approx$ matches compiled torch.matmul(P, V) for shapes 8192 x 8192
+2. the runtime against compiled torch.matmul(P, V) for shapes 8192 x 8192 as reported
 ```bash
     python3 bench_pv.py
 ```
