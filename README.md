@@ -17,7 +17,7 @@ The file bench_qk.py contains CUDA code kernel_qk and benchmarking function eval
 
 The file bench_pv.py contains CUDA code kernel_pv and benchmarking function evaluator_pv. Running the code (preferably on RTX4090) verifies that
 1. the output of the algorithm is the same as multiplication of lower-triangular matrix P by matrix V
-2. the runtime matches compiled torch.matmul(P, V) for shapes 8192 x 8192
+2. the runtime $\approx$ matches compiled torch.matmul(P, V) for shapes 8192 x 8192
 ```bash
     python3 bench_pv.py
 ```
